@@ -28,7 +28,7 @@ const Register = () => {
     localStorage.setItem("user", JSON.stringify(res.data.user));
 
     navigate("/login");
-    toast.success("Register success")
+    toast.success("Register success");
   };
 
   return (
@@ -47,10 +47,11 @@ const Register = () => {
               <input
                 type="text"
                 name="name"
-                onChange={handleChange} 
+                onChange={handleChange}
                 placeholder="Enter your name"
                 className="w-full px-3 py-2 outline-none"
-              required/>
+                required
+              />
             </div>
           </div>
 
@@ -62,10 +63,11 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                onChange={handleChange} 
+                onChange={handleChange}
                 placeholder="Enter your email"
                 className="w-full px-3 py-2 outline-none"
-              required/>
+                required
+              />
             </div>
           </div>
 
@@ -77,10 +79,11 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
-                onChange={handleChange} 
+                onChange={handleChange}
                 placeholder="Create password"
                 className="w-full px-3 py-2 outline-none"
-              required/>
+                required
+              />
             </div>
           </div>
 
@@ -90,6 +93,17 @@ const Register = () => {
             className="w-full bg-(--primary-color) text-white py-2 rounded-lg font-semibold hover:opacity-90 transition flex items-center justify-center gap-2"
           >
             <UserPlus size={18} /> Register
+          </button>
+          <hr />
+          <button
+            type="button"
+            className="w-full border py-2 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-gray-100 transition"
+          >
+            <img
+              src="https://www.svgrepo.com/show/475656/google-color.svg"
+              className="w-5 h-5"
+            />
+            Continue with Google
           </button>
         </form>
 
