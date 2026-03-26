@@ -1,4 +1,4 @@
-import { Instagram, Facebook, TwitterIcon } from "lucide-react";
+import { Instagram, Facebook, TwitterIcon, Youtube } from "lucide-react";
 
 export default function Footer() {
 
@@ -8,8 +8,8 @@ export default function Footer() {
   const face = () =>{
     window.open("https://facebook.com")
   }
-  const x = () =>{
-    window.open("https://x.com")
+  const You = () =>{
+    window.open("https://youtube.com")
   }
 
   return (
@@ -46,9 +46,13 @@ export default function Footer() {
               <Facebook size={20} onClick={()=>face()} />
             </div>
 
-            <div className="hover:opacity-80">
-              <TwitterIcon size={20} onClick={()=>x()} />
+          
+
+            <div  className="hover:opacity-80">
+              <Youtube size={20} onClick={()=>You()} />
             </div>
+
+            
           </div>
         </div>
       </div>

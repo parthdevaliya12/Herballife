@@ -25,7 +25,7 @@ export default function Navbar() {
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvlMiwzreusA93A-JxhFwer2XtXfX0ugQ-gA&s"
               alt="logo"
-              className="h-8 w-8"
+              className="h-8 w-8 rounded-full"
             />
             <span className="text-2xl font-bold text-(--primary-color)">
               Herballife
